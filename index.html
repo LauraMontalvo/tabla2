@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script src="repasotabla.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <p>Nombre: <input type="text" id="nombre" size="40"></p>
+        <p>Apellido: <input type="text" id="apellido" size="40"></p>
+        <p>Materia: <input type="text" id="materia" size="40"></p>
+        <button onclick="agregar()">Agregar a tabla </button>
+        <button onclick="borrar()">Borrar todo </button>
+    </div>
+    
+    <div id=tabla>
+      <table class="tabla-materiales">
+        <thead>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Materia</th>
+        </thead>
+        <tbody id="contenido">
+        </tbody>
+      </table>
+    </div>
+</body>
+</html>
